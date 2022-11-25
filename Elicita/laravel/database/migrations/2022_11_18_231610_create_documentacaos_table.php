@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePregoeiroTable extends Migration
+class CreateDocumentacaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreatePregoeiroTable extends Migration
      */
     public function up()
     {
-        Schema::create('pregoeiro', function (Blueprint $table) {
+        Schema::create('documentacaos', function (Blueprint $table) {
             $table->id();
-            $table->timestamps(); // para criação de logs de alterações
-            $table->varchar('UserName');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +26,6 @@ class CreatePregoeiroTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pregoeiro');
+        Schema::dropIfExists('documentacaos');
     }
 }
