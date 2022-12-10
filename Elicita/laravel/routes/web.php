@@ -14,9 +14,9 @@ use App\Http\Controllers\UserCOntroller;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('user/{users}', function(\App\Models\User $user){
 //     dd($user);
@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('index/', [UserCOntroller::class, 'show']);
 
-Route::get('index/', [UserCOntroller::class, 'teste']);
+// Route::get('pregoeiro/', [UserCOntroller::class, 'user']);
 
-//Route::get('/', [HomeController::class, 'home']);
+// Route::get('/', [HomeController::class, 'home']);
 // Route::get('/', 'App\Http\Controllers\homeController@home');
